@@ -1,0 +1,60 @@
+<h3>ADD FLIGHT</h3>
+<br>
+<div class="container">
+    <form (ngSubmit)="updateFlight()">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="name">Flight ID</label>
+                        <input type="number" [(ngModel)]="flight.flight_id" name="id" class="form-control"
+                            placeholder="Flight ID" required><br>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="name">Source</label>
+                        <input type="text" class="form-control" [(ngModel)]="flight.source" name="source"
+                            placeholder="From" required><br>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="name">Destination</label>
+                        <input type="text" class="form-control" [(ngModel)]="flight.destination" name="destination"
+                            placeholder="To" required><br>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="name">Departure Time</label>
+                        <input type="datetime-local" class="form-control" [(ngModel)]="flight.departure_time"
+                            name="departure_time" required><br>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="name">Arrival Time</label>
+                        <input type="datetime-local" class="form-control" [(ngModel)]="flight.arrival_time"
+                            name="arrival_time" required><br>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="name">Time to Travel</label>
+                        <input type="number" class="form-control" [(ngModel)]="flight.travel_time" name="destination"
+                            placeholder="Time to travel" required><br>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="name">Fare/seat</label>
+                        <input type="number" class="form-control" [(ngModel)]="flight.fare" name="destination"
+                            placeholder="Fare/seat" required><br>
+                    </div>
+
+                    <br><br>
+                    <div class="botton">
+                        <input type="submit" class="btn btn-primary btn-lg" value="Update Flight" id="btn" />    
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

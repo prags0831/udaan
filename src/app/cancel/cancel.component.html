@@ -1,0 +1,36 @@
+<div class="cancel">
+    <div class="container">
+        <h3>CANCEL TICKET</h3>
+        <br>
+        <form (ngSubmit)="deleteBook()">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="row">
+
+                        <!-- <div class="col-md-12">
+                    <label for="name">Udaan ID</label>
+                    <input type="text" class="form-control" placeholder="Udaan Id" required><br>
+                </div> -->
+
+                        <div class="col-md-12">
+                            <label for="name">Email</label>
+                            <input type="text" class="form-control" [(ngModel)]="book.email" name="bookemail"
+                                placeholder="Registered Email" required><br>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" [(ngModel)]="book.name" name="bookname"
+                                placeholder="Registered Name" required><br>
+                        </div>
+
+                        <div class="botton">
+                            <button id="btn" type="submit" class="btn btn-primary btn-lg">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

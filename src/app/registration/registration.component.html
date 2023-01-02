@@ -1,0 +1,52 @@
+<div class="banner">
+    <br>
+    <h3>REGISTRATION</h3>
+    <br>
+    <div class="container">
+        <form (ngSubmit)="createUser()">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="row">
+
+                        <div class="col-md-12">
+                            <label for="name">UserName</label>
+                            <input type="email" name="userName" class="form-control" [(ngModel)]="user.userName"
+                                required>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="name">UserFirstName</label>
+                            <input type="text" name="userFirstName" class="form-control" [(ngModel)]="user.userFirstName"
+                                required>
+                            <br>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="name">UserLastName</label>
+                            <input type="text" name="userLastName" class="form-control" [(ngModel)]="user.userLastName"
+                            required>
+                            <br>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="name">Password</label>
+                            <input type="password" name="userPassowrd" class="form-control" [(ngModel)]="user.userPassword"
+                            required>
+                            <br>
+                        </div>
+
+                        <div class="botton">
+                            <!-- <a id="btn" class="btn btn-primary btn-lg" [routerLink]="['/home']" role="button">Back
+                            </a>  | -->
+                            <input type="submit" role="button"  class="btn btn-primary btn-lg" value="Register"
+                                id="btn" />
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </form>
+    </div>
+</div>

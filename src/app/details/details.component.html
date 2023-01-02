@@ -1,0 +1,55 @@
+<div class="details">
+    <div class="banner">
+        <div class="container">
+            <br>
+            <h3> VIEW BOOK DETAILS</h3>
+            <br>
+            <div class="row">
+                <div>
+                    <div>
+                        <label><b> Flight ID: </b></label> {{flight.flight_id}}
+                    </div>
+                    <div>
+                        <label><b> Source: </b></label> {{flight.source}}
+                    </div>
+                    <div>
+                        <label><b> Destination: </b></label> {{flight.destination}}
+                    </div>
+                    <div>
+                        <label><b> Departure Time: </b></label> {{flight.departure_time}}
+                    </div>
+                    <div>
+                        <label><b> Arrival Time: </b></label> {{flight.arrival_time}}
+                    </div>
+                    <div>
+                        <label><b> Fare/Seat: </b></label> {{flight.fare}}
+                    </div>
+                    <div>
+                        <label><b> Name: </b></label> {{book.name}}
+                    </div>
+                    <div>
+                        <label><b> Age: </b></label> {{book.age}}
+                    </div>
+                    <div>
+                        <label><b> Gender: </b></label> {{book.gender}}
+                    </div>
+                    <div>
+                        <label><b> Phone Number: </b></label> {{book.phone}}
+                    </div>
+                    <div>
+                        <label><b> Email: </b></label> {{book.email}}
+                    </div>
+                    <div>
+                        <label><b> Food: </b></label> {{book.food}}
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- <div class="col-md-4">
+            <a id="btn" class="btn btn-primary btn-lg" [routerLink]="['/customergetall']" role="button"> Back </a>
+        </div> -->
+            <a id="btn" class="btn btn-primary btn-lg" (click)="gotopayment(flight.fare)" role="button">Make
+                Payment</a>
+        </div>
+    </div>
+</div>

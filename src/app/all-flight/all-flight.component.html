@@ -1,0 +1,37 @@
+<div class="allflight">
+<div class="banner">
+    <br>
+    <h3>VIEW FLIGHTS</h3><br>
+    <table class="table table-hover">
+        <tr class="bg text-white" id="btn">
+            <td>FLIGHT ID</td>
+            <td>SOURCE</td>
+            <td>DESTINATION</td>
+            <td>DEPARTURE TIME</td>
+            <td>ARRIVAL TIME</td>
+            <td>TIME OF TRAVEL</td>
+            <td>FARE/SEAT</td>
+            <td>OPERATIONS</td>
+        </tr>
+        <br>
+        <tr *ngFor="let f of flight">
+            <td>{{f.flight_id}}</td>
+            <td>{{f.source}}</td>
+            <td>{{f.destination}}</td>
+            <td>{{f.departure_time}}</td>
+            <td>{{f.arrival_time}}</td>
+            <td>{{f.travel_time}}</td>
+            <td>{{f.fare}}</td>
+            <td>
+                <button id="danger" class="btn btn-danger" (click)="deleteFlight(f.flight_id)">DELETE</button> |
+                <button id="info" class="btn btn-info" (click)="editFlight(f.flight_id)">EDIT</button>
+            </td>
+        </tr>
+        <br>
+    </table>
+    <a id="btn" class="btn btn-primary btn-lg" [routerLink]="['/viewbookdetails']" role="button">View
+        Book Details </a>
+    <span class="text-success">{{message}}</span>
+    <br><br>
+</div>
+</div>

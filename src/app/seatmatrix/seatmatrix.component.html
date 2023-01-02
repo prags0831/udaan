@@ -1,0 +1,159 @@
+<body>
+    <form method="post" name="form_name" id="form_name">
+        <div class="row">
+            <div class="row">
+                <div class="col-sm-4">
+                    <label>Choose Seat</label>
+                    <div>
+                        <input type="radio" name="SeatType" value="Choose" (change)="chooseSeat()" id="chooseme">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <label>Auto Assign</label>
+                    <div>
+                        <input type="radio" name="SeatType" value="Auto" (change)="chooseSeat()" id="auto">
+                    </div>
+                </div>
+                <div class="Choose selectt">
+                    <strong>"Choose Seat"</strong>
+                    enables you to select your preference
+                </div>
+                <div class="Auto selectt">
+                    <strong>"Auto Assign"</strong>
+                    seats are not given according to your preference
+                </div>
+            </div>
+            <br>
+
+            <div class="container full-body">
+                <h1>Food Menu</h1>
+                <div class="row">
+                    <div class="col-md-4 col-lg-4 col-sm-4">
+                        <label>
+                            <input  *ngFor="let itema of itemsA" type="radio" value="{{itema.itemname}}:{{itema.price}}" name="product" id="salad" class="card-input-element" (change)="foodChangeHandler($event)"/>
+                            <div class="panel panel-default card-input component">
+                                <div class="panel-heading">Salads</div>
+                                <div class="panel-body">
+                                    We provide salads
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-4 ">
+                        <label>
+                            <input type="radio" *ngFor="let itemb of itemsB" name="product" value="{{itemb.itemname}}:{{itemb.price}}"  type="radio" id="minicombo"
+                                class="card-input-element" (change)="foodChangeHandler($event)" />
+                            <div class="panel panel-default card-input component">
+                                <div class="panel-heading">Mini combo </div>
+                                <div class="panel-body">
+                                    Taste the varieties we provide in coffee
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-4 ">
+                        <label>
+                            <input type="radio"  *ngFor="let itemc of itemsC" value="{{itemc.itemname}}:{{itemc.price}}" name="product" type="radio" id="kingcombo"
+                                class="card-input-element" (change)="foodChangeHandler($event)" />
+                            <div class="panel panel-default card-input component">
+                                <div class="panel-heading">Combo King</div>
+                                <div class="panel-body">
+                                    All In One
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <p>{{selectedFood}}</p>
+            </div>
+
+        </div>
+    </form>
+    <!-- <script type="text/javascript">checkBoxLimit()</script> -->
+    <div class="row">
+        <div class="col-sm-4">
+            <p>{{totalPrice}}</p>
+        </div>
+    </div>
+    <div class="button">
+        <a id="btn" class="btn btn-primary btn-lg" role="button" (click)="choose()">Checkout</a>
+    </div>
+
+
+    <form>
+        <article>
+
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4 Choose selectt">
+                    <h4>Select your select</h4>
+                    <br>
+                    <table>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <div *ngFor="let basicseats of basicseatsA">
+                                    <div class="row">
+                                        <table>
+                                            <tr>
+                                                <input type="radio" name="basicseats"
+                                                    value="{{basicseats.seatno}} : {{basicseats.price}}"
+                                                    (change)="radioChangeHandler($event)">
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div *ngFor="let basicseats of basicseatsB">
+                                    <div class="row">
+                                        <table>
+                                            <tr>
+                                                <input type="radio" name="basicseats"
+                                                    value="{{basicseats.seatno}} : {{basicseats.price}}"
+                                                    (change)="radioChangeHandler($event)">
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div *ngFor="let basicseats of basicseatsC">
+                                    <div class="row">
+                                        <table>
+                                            <tr>
+                                                <input type="radio" name="basicseats"
+                                                    value="{{basicseats.seatno}} : {{basicseats.price}}"
+                                                    (change)="radioChangeHandler($event)">
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3">
+                                <div *ngFor="let basicseats of basicseatsD">
+                                    <div class="row">
+                                        <table>
+                                            <tr>
+                                                <input type="radio" name="basicseats"
+                                                    value="{{basicseats.seatno}} : {{basicseats.price}}"
+                                                    (change)="radioChangeHandler($event)">
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </table>
+                    <br><br>
+                    <h4>Selected Seat : Price</h4>
+                    <h4>{{selectedSeat}}</h4>
+                </div>
+            </div>
+        </article>
+    </form>
+</body>

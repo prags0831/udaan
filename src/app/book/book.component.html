@@ -1,0 +1,88 @@
+<div class="container">
+    <br>
+    <h3>BOOK UDAAN TICKET</h3>
+    <br>
+    <form (ngSubmit)="createBook()">
+        <div class="row">
+
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="name">Flight ID</label>
+                        <input type="text" class="form-control" [(ngModel)]="book.flight_id" name="flight_id"
+                            placeholder="Flight_id" readonly required><br>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" [(ngModel)]="book.name" name="name"
+                            placeholder="User Name" required><br>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="name">Age</label>
+                        <input type="number" class="form-control" [(ngModel)]="book.age" name="age" placeholder="Age"
+                            required><br>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label class="form-check-label" for="flexCheckDefault">Gender</label>&nbsp;&nbsp;
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" [(ngModel)]="book.gender" name="gender"
+                                id="foodyes" value="male">
+                            <label class="form-check-label" for="inlineRadio1">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" [(ngModel)]="book.gender" name="gender"
+                                id="foodno" value="female">
+                            <label class="form-check-label" for="inlineRadio2">Female</label>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="col-md-12">
+                        <label for="name">Phone Number</label>
+                        <input type="text" class="form-control" [(ngModel)]="book.phone" name="phone" placeholder=""
+                            required><br>
+                    </div>
+
+                    <div class="col-md-12">
+                        <label for="name">Email</label>
+                        <input type="email" email #prmEmail="ngModel" class="form-control" [(ngModel)]="book.email"
+                            name="email" id="email" placeholder="you@example.com" required #idfield="ngModel">
+                        <br>
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label for="Email">Enter Email</label><br>
+                        <input type="email"  email #prmEmail="ngModel" [(ngModel)]="book.email"  placeholder="Enter email address" name="email" class="form-control" id="email" required #idfield="ngModel">
+                        <div *ngIf="prmEmail.errors?.email"> 
+                          Email not valid.
+                    </div>  -->
+
+                    <div class="col-md-12">
+                        <label class="form-check-label" for="flexCheckDefault">Add Food</label>&nbsp;&nbsp;
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" [(ngModel)]="book.food" name="food"
+                                id="foodyes" value="yes">
+                            <label class="form-check-label" for="inlineRadio1">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" [(ngModel)]="book.food" name="food" id="foodno"
+                                value="no">
+                            <label class="form-check-label" for="inlineRadio2">No</label>
+                        </div>
+                    </div>
+
+                    <br><br>
+                    <div class="botton">
+                        <input id="btn" type="submit" class="btn btn-primary btn-lg" value="Details" id="btn" />
+                    </div>
+                    <br>
+                </div>
+                <span class="text-info">{{message}}</span>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,26 @@
+<div class="login">
+    <br><br><br>
+    <div class="container">
+        <br>
+        <h3>LOGIN</h3>
+        <br><br>
+        <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <label for="name" class="form-label">Email</label> <input type="text" class="form-control" id="userName"
+                    placeholder="Enter your UserName" name="userName" ngModel value="" required>
+                <br>
+                <label for="password" class="form-label">Password</label> <input type="password" class="form-control"
+                 name="userPassword"  ngModel id="userPassword" placeholder="********" value="" required>
+            </div>
+            <div class="col-md-1"></div>    
+        </div>
+        <br>
+      
+        <div class="botton">
+            <input type="submit" id="btn" class="btn btn-primary btn-lg"  role="button">
+        </div>
+    </form> 
+    </div>
+</div>

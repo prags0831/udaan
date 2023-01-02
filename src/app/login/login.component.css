@@ -1,0 +1,23 @@
+h3 { 
+    text-align: center;
+    color: rgb(24, 84, 84);
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(169, 193, 193);
+}
+
+.container {
+    width: 400px;
+    height: 60vh;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px rgb(169, 193, 193);
+}
+
+.botton {
+    text-align: center;
+}
+
+.login {
+    background: linear-gradient(rgba(178, 197, 197, 0.7),rgba(209, 225, 225, 0.9)),url('/assets/flight2.jfif');
+
+}

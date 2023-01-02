@@ -1,0 +1,10 @@
+h4 { 
+    text-align: center;
+    color: rgb(24, 84, 84);
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.checkin {
+    /* background: url('/assets/flight7.jpg'); */
+    background: linear-gradient(rgba(201, 189, 169, 0.9),rgba(220, 216, 207, 0.9));
+}

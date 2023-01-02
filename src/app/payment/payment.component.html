@@ -1,0 +1,94 @@
+<div class="payment">
+    <div class="container">
+        <br>
+        <h3>MAKE PAYMENT</h3>
+        <br>
+        <form (ngSubmit)="createPayment()">
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="row">
+                        <P>Choose the type of card</P>
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input id="credit" name="card" [(ngModel)]="payment.card" type="radio"
+                                        class="form-check-input" required>
+                                    <label class="form-check-label" for="credit">Credit card</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input id="debit" name="card" [(ngModel)]="payment.card" type="radio"
+                                        class="form-check-input" required>
+                                    <label class="form-check-label" for="debit">Debit card</label>
+                                </div>
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <i class="fa-brands fa-cc-visa"></i>&nbsp;
+                                <i class="fa-brands fa-cc-mastercard"></i>&nbsp;
+                                <i class="fa-regular fa-credit-card"></i>
+                            </div><br>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="name">Amount to be Paid</label>
+                            <input type="text" class="form-control" [(ngModel)]="payment.amount" placeholder="Amount"
+                                name="amount" readonly required>
+                            <div class="invalid-feedback">
+                                Amount is requried.
+                            </div><br>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" [(ngModel)]="payment.name" name="name"
+                                placeholder="Name on card" required>
+                            <div class="invalid-feedback">
+                                Name on card is required.
+                            </div><br>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="name">Card Number</label>
+                            <input type="text" name="card_num" [(ngModel)]="payment.card_num"
+                                placeholder="1234 1234 1234" class="form-control" required>
+                            <div class="invalid-feedback">
+                                Card number is required.
+                            </div><br>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="name">Expiration Date</label>
+                            <input type="text" name="exp_date" [(ngModel)]="payment.exp_date" class="form-control"
+                                placeholder="MM/YYYY" required><br>
+                            <div class="invalid-feedback">
+                                Expiration date is required.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="name">CVV</label>
+                            <input type="text" name="cvv" [(ngModel)]="payment.cvv" class="form-control"
+                                placeholder="000" required><br>
+                            <div class="invalid-feedback">
+                                Security code required.
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <input type="hidden" id="pnr" name="pnr" value="pnr" [(ngModel)]="payment.pnr">
+                        </div>
+
+                        <!-- <input id ="bla" value="Submit" (click)="pnrgenerate();createPayment();successpage();" class="btn btn-success"/> -->
+                        <div class="botton">
+                            <!-- <input type="submit" (click)="successpage()" role="button" class="btn btn-primary btn-lg" value="Proceed Payment"
+                                id="btn" /> -->
+                            <input id="bla" value="Proceed Payment"
+                                (click)="pnrgenerate();createPayment();successpage();" class="btn btn-primary btn-lg" />
+                            <br><br>
+                        </div>
+                        <!-- <span class="text-info">{{message}}</span> -->
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

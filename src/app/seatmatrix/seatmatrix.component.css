@@ -1,0 +1,302 @@
+* {
+
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  font-size: 12px;
+
+  background: rgb(163, 196, 196);
+
+}
+
+
+
+.plane {
+
+  margin: 20px auto;
+
+  max-width: 300px;
+
+  background: white;
+
+  border-top-left-radius: 50%;
+
+  border-top-right-radius: 50%;
+
+}
+
+
+
+.select {
+
+  height: 250px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  text-align: center;
+
+}
+
+
+
+.select h1 {
+
+  width: 60%;
+
+  margin: 100px auto 35px auto;
+
+}
+
+
+
+.exit {
+
+  position: relative;
+
+  height: 50px;
+
+}
+
+.exit:before, .exit:after {
+
+  content: "EXIT";
+
+  font-size: 14px;
+
+  line-height: 18px;
+
+  padding: 0px 2px 2px 2px;
+
+  display: block;
+
+  position: absolute;
+
+  background: red;
+
+  color: white;
+
+  top: 50%;
+
+  transform: translate(0, -50%);
+
+  border-radius: 5px;
+
+}
+
+.exit:before {
+
+  left: 10px;
+
+}
+
+.exit:after {
+
+  right: 10px;
+
+}
+
+
+
+ol {
+
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+
+}
+
+
+
+.seats {
+
+  display: flex;
+
+  flex-direction: row;
+
+  flex-wrap: nowrap;
+
+  justify-content: flex-start;
+
+}
+
+
+
+.seat {
+
+  display: flex;
+
+  flex: 0 0 14.28%;
+
+  padding: 5px;
+
+  position: relative;
+
+}
+
+
+
+.seat label {
+
+  display: block;
+
+  position: relative;
+
+  width: 100%;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  font-weight: bolder;
+
+  line-height: 1.5rem;
+
+  padding: 4px 0;
+
+  background: rgb(163, 196, 196);
+
+  border-radius: 5px;
+
+  color: black;
+
+}
+
+
+
+.seat label:hover {
+
+  cursor: pointer;
+
+  box-shadow: 0 0 0px 2px rgb(186, 114, 114);
+
+}
+
+
+
+.seat:nth-child(3) {
+
+  margin-right: 14%;
+
+}
+
+.seat input[type=checkbox] {
+
+  position: absolute;
+
+}
+
+.seat input[type=checkbox]:checked + label {
+
+  background: #656e65;
+
+}
+
+
+
+h6 {
+
+  text-align: center;
+
+  color: rgb(24, 84, 84);
+
+  font-family:'Times New Roman', Times, serif;
+
+  font-weight: bold;
+
+}
+
+
+
+
+
+.full-body {
+
+  background-color: rgb(249, 243, 234);
+
+}
+
+
+
+.component {
+
+  background-color: bisque;
+
+}
+
+
+
+.container {
+
+  max-width: 900px;
+
+  margin: 0 auto;
+
+}
+
+
+
+label {
+
+  width: 100%;
+
+}
+
+
+
+.card-input-element {
+
+  display: none;
+
+}
+
+
+
+.card-input {
+
+  margin: 10px;
+
+  padding: 00px;
+
+}
+
+
+
+.card-input:hover {
+
+  cursor: pointer;
+
+}
+
+
+
+.card-input-element:checked+.card-input {
+
+  box-shadow: 0 0 1px 1px #2ecc71;
+
+}
+
+.seats:checked {
+
+  border-color: red;
+
+  background-color:red;
+
+}
+
+
+
+input[type='radio'] {
+
+  transform: scale(2) ;
+
+}
+

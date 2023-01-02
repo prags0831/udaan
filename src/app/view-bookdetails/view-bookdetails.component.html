@@ -1,0 +1,59 @@
+<div class="viewbook">
+    <div class="banner">
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h3>Flight Details</h3>
+                    <table class="table table-hover" border="1px">
+                        <tr class="bg text-white" id="btn">
+                            <td>FLIGHT ID</td>
+                            <td>SOURCE</td>
+                            <td>DESTINATION</td>
+                            <td>DEPARTURE</td>
+                            <td>ARRIVAL</td>
+                            <td>TIME OF TRAVEL</td>
+                            <td>FARE/SEAT</td>
+                        </tr>
+                        <br>
+                        <tr *ngFor="let f of flight">
+                            <td>{{f.flight_id}}</td>
+                            <td>{{f.source}}</td>
+                            <td>{{f.destination}}</td>
+                            <td>{{f.departure_time}}</td>
+                            <td>{{f.arrival_time}}</td>
+                            <td>{{f.travel_time}}</td>
+                            <td>{{f.fare}}</td>
+                        </tr>
+                        <br>
+                    </table>
+                    <br>
+                    <h3>User Book Details</h3>
+                    <table class="table table-hover" border="1px">
+                        <tr class="bg text-white" id="btn">
+                            <td>Flight ID</td>
+                            <td>NAME</td>
+                            <td>AGE</td>
+                            <td>GENDER</td>
+                            <td>PHONE NUMBER</td>
+                            <td>EMAIL</td>
+                            <td>FOOD</td>
+                        </tr>
+                        <br>
+                        <tr *ngFor="let b of book">
+                            <td>{{b.flight_id}}</td>
+                            <td>{{b.name}}</td>
+                            <td>{{b.age}}</td>
+                            <td>{{b.gender}}</td>
+                            <td>{{b.phone}}</td>
+                            <td>{{b.email}}</td>
+                            <td>{{b.food}}</td>
+                        </tr>
+                        <br>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+body {
+    background: rgb(203, 116, 116);
+}
+
+#side_nav {
+    background: #000;
+    min-width: 250px;
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+}

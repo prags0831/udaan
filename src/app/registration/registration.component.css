@@ -1,0 +1,16 @@
+
+
+.container {
+    width: 90%;
+    height: 75vh;
+    border-radius: 20px;
+    /* box-shadow: 5px 5px 5px 5px rgb(169, 193, 193); */
+    
+}
+
+.banner {
+    background: linear-gradient(rgb(169, 193, 193),rgba(251, 248, 248, 0.5)),url('/assets/flight2.jfif');
+    /* overflow: hidden; */
+    background-size: cover;
+    overflow-x: hidden;
+}

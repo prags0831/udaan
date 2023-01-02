@@ -1,0 +1,39 @@
+h4 { 
+    color: rgb(24, 84, 84);
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.mapouter {
+    align-items: center;
+    position: relative;
+    text-align: right;
+    width: 600px;
+    height: 380px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    width: 480px;
+    height: 380px;
+}
+
+.gmap_iframe {
+    width: 600px !important;
+    height: 400px !important;
+}
+
+img {
+    width: 480px;
+    height: 350px;
+}
+
+.container {
+    width: calc(100%-250px);
+}
+
+.contact {
+    background: linear-gradient(rgba(178, 197, 197, 0.7),rgba(209, 225, 225, 0.9));
+
+}

@@ -1,0 +1,12 @@
+.btn { 
+    text-align: center;
+}
+
+.botton {
+    text-align: center;
+}
+
+.paymentemail {
+    background: linear-gradient(rgba(178, 197, 197, 0.7),rgba(209, 225, 225, 0.9)),url('/assets/flight8.jpg');
+
+}

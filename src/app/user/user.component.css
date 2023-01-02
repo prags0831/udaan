@@ -1,0 +1,10 @@
+#danger{
+    color: brown;
+}
+#info {
+    color:rgb(82, 165, 165);
+}
+
+.viewflight {
+    background: linear-gradient(rgb(195, 219, 219), rgb(218, 232, 232));
+}

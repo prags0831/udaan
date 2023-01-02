@@ -1,0 +1,12 @@
+.forbidden {
+    background: linear-gradient(rgba(201, 189, 169, 0.9), rgba(202, 190, 167, 0.6));
+}
+
+h3 { 
+    color: brown;
+    text-align: center;
+    text-shadow: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(240, 166, 183);
+}
